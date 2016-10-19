@@ -9,7 +9,10 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand topnav" href="#">CSV-Challenge</a>
+            <%= image_tag('/logo.png', class: "navbar-brand topnav") %>
+
+
+            <a class="navbar-brand topnav" href="#">DynahMom Web</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -38,32 +41,76 @@
                     <h1>DynahMom Bot</h1>
                     <h3>Put a link and see the future!</h3>
 
-                    <ul class="list-inline intro-social-buttons">
+
+                    <ul class="">
                         <li>
-                            <%= form_tag(search_path(:q), method: :get) do %>
-                                <%= text_field_tag(:q, nil, class: "form-control", placeholder: "Start typing") %>
-                                <%= submit_tag("Search", class: "form-control") %>
+                            <div class="form-group form-group-lg">
+                                <div class="col-sm-14">
+                            <%= form_tag(search_path(:q), method: :get, class: "form-group-lg") do %>
+                                <%= text_field_tag(:q, nil, class: "form-control input-lg", placeholder: "Paste an Youtube URL or ID here...") %>
+                            </div>
+                                <%= submit_tag("Preview", class: "form-control") %>
                             <% end %>
+                        </div>
                         </li>
                     </ul>
 
-                    <!--
-                    <% unless user_signed_in? %>
+                    
+                    <% if @youtube %>
 	                    <hr class="intro-divider">
-	                    <ul class="list-inline intro-social-buttons">
-	                        <li>
-	                        	<%= link_to "Log in", new_user_session_path, class: "network-name" %>
-	                        </li>
-	                        <li>
-	                        	<%= link_to "Sign up", new_user_registration_path %>
-	                        </li>
-	                    </ul>
+
+      <div class="jumbotron row marketing">
+        <%= image_tag(@youtube.thumbnail_url) %>
+        <div class="col-lg-3">
+
+          <h4>Titulo</h4>
+          <p><%= @youtube.title %></p>
+
+          <h4>Description</h4>
+          <p><%= @youtube.description %></p>
+
+          <h4>Subheading</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+
+        <div class="col-lg-3">
+          <h4>Published at</h4>
+          <p><%= @youtube.published_at %></p>
+
+          <h4>100</p>
+
+          <h4>Subheading</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+        <div class="col-lg-3">
+          <h4>Likes</h4>
+          <p>100</p>
+
+          <h4>Subheading</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+          <h4>Subheading</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+        <div class="col-lg-3">
+          <h4>Dislikes</h4>
+          <p>100</p>
+
+          <h4>Subheading</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+          <h4>Subheading</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+
+      </div>
                     <% end %>
-                    -->
+
 
 
                 </div>
             </div>
+
         </div>
 
     </div>

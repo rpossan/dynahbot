@@ -748,3 +748,2521 @@ PG::ConnectionBad - could not connect to server: No such file or directory
 
 
 Started POST "/__better_errors/48e503a16bbd37b5/variables" for 127.0.0.1 at 2016-10-19 13:38:46 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 17:57:12 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (114.6ms)
+  Rendered layouts/_messages.html.erb (1.8ms)
+Completed 200 OK in 5335ms (Views: 5024.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search/q?utf8=%E2%9C%93&q=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D7iwUgSD2ci0&commit=Search" for 127.0.0.1 at 2016-10-19 17:57:27 +0000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"https://www.youtube.com/watch?v=7iwUgSD2ci0", "commit"=>"Search", "id"=>"q"}
+Completed 500 Internal Server Error in 133ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate - Missing template visitors/aa with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/mnt/c/ronaldo/dynahbot/app/views"
+  * "/home/rpossan/.rvm/gems/ruby-2.3.0/gems/devise-4.1.1/app/views"
+:
+  actionview (4.2.6) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.6) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.6) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.6) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.6) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.6) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.6) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.6) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.6) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.6) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.6) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+  activesupport (4.2.6) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  app/controllers/search_controller.rb:7:in `index'
+  actionpack (4.2.6) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/f10415dd076bc168/variables" for 127.0.0.1 at 2016-10-19 17:57:29 +0000
+
+
+Started GET "/search/q?utf8=%E2%9C%93&q=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D7iwUgSD2ci0&commit=Search" for 127.0.0.1 at 2016-10-19 17:57:45 +0000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"https://www.youtube.com/watch?v=7iwUgSD2ci0", "commit"=>"Search", "id"=>"q"}
+  Rendered visitors/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_navigation_links.html.erb (1.7ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.9ms)
+  Rendered layouts/_navigation.html.erb (68.8ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 806ms (Views: 803.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search/q?utf8=%E2%9C%93&q=%23%3CYt%3A%3AModels%3A%3AVideo%3A0x000000043a0cd8%3E&commit=Search" for 127.0.0.1 at 2016-10-19 17:58:19 +0000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"#<Yt::Models::Video:0x000000043a0cd8>", "commit"=>"Search", "id"=>"q"}
+  Rendered visitors/index.html.erb within layouts/application (40.9ms)
+Completed 500 Internal Server Error in 150ms (ActiveRecord: 0.0ms)
+
+NoMethodError - undefined method `url' for #<Yt::Models::Video:0x00000005c3eda8>:
+  app/views/visitors/index.html.erb:44:in `block in _app_views_visitors_index_html_erb___1589019303433614212_48395000'
+  actionview (4.2.6) lib/action_view/helpers/capture_helper.rb:38:in `block in capture'
+  actionview (4.2.6) lib/action_view/helpers/capture_helper.rb:202:in `with_output_buffer'
+  actionview (4.2.6) lib/action_view/helpers/capture_helper.rb:38:in `capture'
+  actionview (4.2.6) lib/action_view/helpers/form_tag_helper.rb:70:in `form_tag'
+  app/views/visitors/index.html.erb:43:in `_app_views_visitors_index_html_erb___1589019303433614212_48395000'
+  actionview (4.2.6) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.6) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.6) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.6) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+  actionview (4.2.6) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.6) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.6) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.6) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.6) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.6) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.6) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.6) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.6) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.6) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+  activesupport (4.2.6) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  app/controllers/search_controller.rb:7:in `index'
+  actionpack (4.2.6) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/63efe6b8d75d017c/variables" for 127.0.0.1 at 2016-10-19 17:58:20 +0000
+
+
+Started GET "/search/q?utf8=%E2%9C%93&q=%23%3CYt%3A%3AModels%3A%3AVideo%3A0x000000043a0cd8%3E&commit=Search" for 127.0.0.1 at 2016-10-19 17:58:35 +0000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"#<Yt::Models::Video:0x000000043a0cd8>", "commit"=>"Search", "id"=>"q"}
+  Rendered visitors/index.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_navigation_links.html.erb (0.7ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.1ms)
+  Rendered layouts/_navigation.html.erb (118.2ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 1025ms (Views: 1021.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search/q?utf8=%E2%9C%93&q=%23%3CYt%3A%3AModels%3A%3AVideo%3A0x000000043a0cd8%3E&commit=Search" for 127.0.0.1 at 2016-10-19 18:00:17 +0000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"#<Yt::Models::Video:0x000000043a0cd8>", "commit"=>"Search", "id"=>"q"}
+  Rendered visitors/index.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_navigation_links.html.erb (0.6ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (0.8ms)
+  Rendered layouts/_navigation.html.erb (69.0ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 859ms (Views: 856.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search/q?utf8=%E2%9C%93&q=%23%3CYt%3A%3AModels%3A%3AVideo%3A0x000000043a0cd8%3E&commit=Search" for 127.0.0.1 at 2016-10-19 18:00:48 +0000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"#<Yt::Models::Video:0x000000043a0cd8>", "commit"=>"Search", "id"=>"q"}
+  Rendered visitors/index.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_navigation_links.html.erb (1.1ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.3ms)
+  Rendered layouts/_navigation.html.erb (95.2ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 953ms (Views: 949.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search/q?utf8=%E2%9C%93&q=%23%3CYt%3A%3AModels%3A%3AVideo%3A0x000000043a0cd8%3E&commit=Search" for 127.0.0.1 at 2016-10-19 18:01:26 +0000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"#<Yt::Models::Video:0x000000043a0cd8>", "commit"=>"Search", "id"=>"q"}
+  Rendered visitors/index.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_navigation_links.html.erb (0.7ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (0.7ms)
+  Rendered layouts/_navigation.html.erb (79.1ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 794ms (Views: 791.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:02:00 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 691ms (Views: 688.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:02:18 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 727ms (Views: 725.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:03:51 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 1060ms (Views: 1058.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:05:49 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 1038ms (Views: 1034.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:06:10 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 1161ms (Views: 1159.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:06:36 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 1191ms (Views: 1188.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:07:13 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 1248ms (Views: 1243.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:07:39 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 1127ms (Views: 1125.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:08:03 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 1128ms (Views: 1126.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:08:05 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 695ms (Views: 693.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:09:55 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 128ms (ActiveRecord: 0.0ms)
+
+SyntaxError - syntax error, unexpected ':', expecting =>
+...orm-control", aria-describedby: "sizing-addon2", placeholder...
+...                               ^
+/mnt/c/ronaldo/dynahbot/app/views/visitors/index.html.erb:45: syntax error, unexpected ',', expecting ')'
+...a-describedby: "sizing-addon2", placeholder: "Start typing")...
+...                               ^
+/mnt/c/ronaldo/dynahbot/app/views/visitors/index.html.erb:45: syntax error, unexpected ')', expecting keyword_end
+... placeholder: "Start typing") );@output_buffer.safe_append='
+...                               ^:
+  app/views/visitors/index.html.erb:45:in `'
+  actionview (4.2.6) lib/action_view/template.rb:296:in `compile'
+  actionview (4.2.6) lib/action_view/template.rb:245:in `block (2 levels) in compile!'
+  activesupport (4.2.6) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.6) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.6) lib/action_view/template.rb:244:in `block in compile!'
+  actionview (4.2.6) lib/action_view/template.rb:232:in `compile!'
+  actionview (4.2.6) lib/action_view/template.rb:144:in `block in render'
+  activesupport (4.2.6) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.6) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.6) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+  actionview (4.2.6) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.6) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.6) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.6) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.6) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.6) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.6) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.6) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.6) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.6) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+  activesupport (4.2.6) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.6) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/41dd0a170aaa01bf/variables" for 127.0.0.1 at 2016-10-19 18:09:56 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:10:25 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 717ms (Views: 714.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:13:11 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_messages.html.erb (0.9ms)
+Completed 200 OK in 915ms (Views: 911.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:13:43 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 675ms (Views: 673.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:14:02 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 794ms (Views: 791.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:15:09 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 909ms (Views: 907.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:15:42 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 653ms (Views: 650.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:16:10 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 668ms (Views: 666.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:16:42 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 677ms (Views: 675.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:17:07 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 939ms (Views: 936.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:17:25 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 682ms (Views: 680.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:17:40 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 673ms (Views: 671.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:18:12 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 632ms (Views: 630.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:18:51 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 1218ms (Views: 1215.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:19:23 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 701ms (Views: 699.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:19:43 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 1118ms (Views: 1116.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:20:06 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 1203ms (Views: 1200.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:20:37 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 1033ms (Views: 1031.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:20:56 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 1167ms (Views: 1165.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:21:42 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 715ms (Views: 712.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:22:04 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 761ms (Views: 758.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:22:21 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 772ms (Views: 769.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:22:41 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 704ms (Views: 702.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:23:06 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 694ms (Views: 692.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:23:50 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (11.8ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 759ms (Views: 756.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:24:29 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 731ms (Views: 728.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:24:49 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 719ms (Views: 717.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:25:40 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 720ms (Views: 718.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:26:45 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 693ms (Views: 690.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:27:13 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 713ms (Views: 710.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search/q?utf8=%E2%9C%93&q=&commit=Search" for 127.0.0.1 at 2016-10-19 18:27:28 +0000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"", "commit"=>"Search", "id"=>"q"}
+  Rendered visitors/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_navigation_links.html.erb (0.6ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.9ms)
+  Rendered layouts/_navigation.html.erb (74.3ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 912ms (Views: 909.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search/q?utf8=%E2%9C%93&q=&commit=Search" for 127.0.0.1 at 2016-10-19 18:27:41 +0000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"", "commit"=>"Search", "id"=>"q"}
+  Rendered visitors/index.html.erb within layouts/application (10.2ms)
+  Rendered layouts/_navigation_links.html.erb (0.5ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (0.7ms)
+  Rendered layouts/_navigation.html.erb (79.6ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 1060ms (Views: 1057.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:27:50 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 663ms (Views: 661.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:28:06 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 692ms (Views: 690.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:29:00 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 1041ms (Views: 1038.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:30:03 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 1272ms (Views: 1269.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:30:24 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 664ms (Views: 662.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:31:00 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 783ms (Views: 781.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:31:25 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 701ms (Views: 699.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:32:01 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 670ms (Views: 668.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:32:27 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 653ms (Views: 651.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:32:51 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 716ms (Views: 711.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:33:06 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 670ms (Views: 667.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:33:20 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 680ms (Views: 678.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:33:40 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 701ms (Views: 697.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:34:13 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (7.2ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 871ms (Views: 869.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:34:39 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 644ms (Views: 642.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:35:22 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 672ms (Views: 668.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:36:10 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (6.3ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 1183ms (Views: 1180.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:37:01 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 723ms (Views: 721.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:37:41 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 686ms (Views: 684.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:42:06 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 749ms (Views: 745.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:43:03 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 669ms (Views: 667.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:44:05 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 1044ms (Views: 1041.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:45:56 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 714ms (Views: 710.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:46:48 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 661ms (Views: 658.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:47:06 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 662ms (Views: 659.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:47:32 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 657ms (Views: 655.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:48:01 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 671ms (Views: 669.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:50:05 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (5.6ms)
+Completed 500 Internal Server Error in 122ms (ActiveRecord: 0.0ms)
+
+SyntaxError - unknown regexp option - h
+/mnt/c/ronaldo/dynahbot/app/views/visitors/index.html.erb:64: syntax error, unexpected tINTEGER, expecting ')'
+          <h4>Dislikes</h4>
+                          ^
+/mnt/c/ronaldo/dynahbot/app/views/visitors/index.html.erb:65: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+          <p>Morbi leo risus, porta ac consectetur ...
+                      ^
+/mnt/c/ronaldo/dynahbot/app/views/visitors/index.html.erb:65: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...   <p>Morbi leo risus, porta ac consectetur ac, vestibulum a...
+...                               ^
+/mnt/c/ronaldo/dynahbot/app/views/visitors/index.html.erb:65: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...c consectetur ac, vestibulum at eros. Cras mattis consectetu...
+...                               ^
+/mnt/c/ronaldo/dynahbot/app/views/visitors/index.html.erb:67: syntax error, unexpected '<'
+          <h4>Subheading</h4>
+           ^
+/mnt/c/ronaldo/dynahbot/app/views/visitors/index.html.erb:68: unknown regexp option - p
+/mnt/c/ronaldo/dynahbot/app/views/visitors/index.html.erb:69: syntax error, unexpected '<'
+        </div>
+         ^
+/mnt/c/ronaldo/dynahbot/app/views/visitors/index.html.erb:72: unknown regexp option - h
+/mnt/c/ronaldo/dynahbot/app/views/visitors/index.html.erb:72: syntax error, unexpected tINTEGER, expecting ')'
+          <h4>Views</h4>
+                       ^
+/mnt/c/ronaldo/dynahbot/app/views/visitors/index.html.erb:75: unknown regexp option - h
+/mnt/c/ronaldo/dynahbot/app/views/visitors/index.html.erb:75: syntax error, unexpected tINTEGER, expecting ')'
+          <h4>Subheading</h4>
+                            ^
+/mnt/c/ronaldo/dynahbot/app/views/visitors/index.html.erb:76: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+          <p>Morbi leo risus, porta ac consectetur ...
+                      ^
+/mnt/c/ronaldo/dynahbot/app/views/visitors/index.html.erb:76: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...   <p>Morbi leo risus, porta ac consectetur ac, vestibulum a...
+...                               ^
+/mnt/c/ronaldo/dynahbot/app/views/visitors/index.html.erb:76: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...c consectetur ac, vestibulum at eros. Cras mattis consectetu...
+...                               ^
+/mnt/c/ronaldo/dynahbot/app/views/visitors/index.html.erb:78: syntax error, unexpected '<'
+          <h4>Subheading</h4>
+           ^
+/mnt/c/ronaldo/dynahbot/app/views/visitors/index.html.erb:79: unknown regexp option - p
+/mnt/c/ronaldo/dynahbot/app/views/visitors/index.html.erb:80: syntax error, unexpected '<'
+        </div>
+         ^
+/mnt/c/ronaldo/dynahbot/app/views/visitors/index.html.erb:81: unknown regexp options - dv
+/mnt/c/ronaldo/dynahbot/app/views/visitors/index.html.erb:82: syntax error, unexpected '<'
+                    <% end );@output_buffer.safe_append='
+                     ^
+/mnt/c/ronaldo/dynahbot/app/views/visitors/index.html.erb:121: syntax error, unexpected keyword_ensure, expecting keyword_end
+/mnt/c/ronaldo/dynahbot/app/views/visitors/index.html.erb:123: syntax error, unexpected end-of-input, expecting keyword_end:
+  app/views/visitors/index.html.erb:64:in `'
+  actionview (4.2.6) lib/action_view/template.rb:296:in `compile'
+  actionview (4.2.6) lib/action_view/template.rb:245:in `block (2 levels) in compile!'
+  activesupport (4.2.6) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.6) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.6) lib/action_view/template.rb:244:in `block in compile!'
+  actionview (4.2.6) lib/action_view/template.rb:232:in `compile!'
+  actionview (4.2.6) lib/action_view/template.rb:144:in `block in render'
+  activesupport (4.2.6) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.6) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.6) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+  actionview (4.2.6) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.6) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.6) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.6) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.6) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.6) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.6) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.6) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.6) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.6) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+  activesupport (4.2.6) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.6) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/4b5d03fce1ba3583/variables" for 127.0.0.1 at 2016-10-19 18:50:06 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:50:18 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 955ms (Views: 952.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:51:17 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_messages.html.erb (1.9ms)
+Completed 200 OK in 675ms (Views: 673.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:51:41 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 777ms (Views: 774.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:52:21 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 1325ms (Views: 1323.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:53:07 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 786ms (Views: 782.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:53:20 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 663ms (Views: 661.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:53:35 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (7.6ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 948ms (Views: 946.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:53:57 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 793ms (Views: 791.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:54:36 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 694ms (Views: 691.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 18:57:52 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 1528ms (Views: 1525.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logo.png" for 127.0.0.1 at 2016-10-19 18:58:52 +0000
+
+ActionController::RoutingError (No route matches [GET] "/logo.png"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.8ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (363.4ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.7ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1246.0ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.1ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (2016.2ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (2.5ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (2954.6ms)
+
+
+Started GET "/images/logo.png" for 127.0.0.1 at 2016-10-19 19:00:29 +0000
+
+ActionController::RoutingError (No route matches [GET] "/images/logo.png"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (13.3ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.2ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.3ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (961.1ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.3ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.8ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.5ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (781.2ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.4ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.6ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1668.9ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/logo.png"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+
+
+Started GET "/public/logo.png" for 127.0.0.1 at 2016-10-19 19:01:00 +0000
+
+ActionController::RoutingError (No route matches [GET] "/public/logo.png"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.2ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.9ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.2ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (902.1ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.7ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (2.0ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.8ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.6ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (1135.5ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.3ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.5ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (2223.2ms)
+
+
+Started GET "/public/logo.png" for 127.0.0.1 at 2016-10-19 19:01:30 +0000
+
+ActionController::RoutingError (No route matches [GET] "/public/logo.png"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.4ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.9ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.2ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (926.3ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.4ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.2ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.3ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (663.4ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.6ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1548.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:02:03 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (7.4ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 1401ms (Views: 1399.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:02:49 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 717ms (Views: 715.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:03:04 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 673ms (Views: 671.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:04:03 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 1266ms (Views: 1263.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:04:32 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 1742ms (Views: 1740.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:04:54 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 1137ms (Views: 1135.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:05:10 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 1009ms (Views: 1005.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:05:54 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 1136ms (Views: 1133.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:06:14 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 1358ms (Views: 1357.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:07:12 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 1014ms (Views: 1011.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:07:27 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 1046ms (Views: 1044.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:07:39 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 1376ms (Views: 1374.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:08:04 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 1056ms (Views: 1054.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:08:21 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 1079ms (Views: 1077.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:08:42 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 1248ms (Views: 1245.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:09:11 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 1031ms (Views: 1029.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:09:24 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 1147ms (Views: 1144.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:09:38 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 1035ms (Views: 1033.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:09:58 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 2375ms (Views: 2371.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:10:22 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 1134ms (Views: 1132.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:11:31 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (30.4ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 693ms (Views: 690.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/logo" for 127.0.0.1 at 2016-10-19 19:11:38 +0000
+
+ActionController::RoutingError (No route matches [GET] "/images/logo"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.8ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (13.9ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.8ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.7ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1209.3ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.2ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.2ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.2ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.2ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (844.4ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.2ms)
+  Rendered /home/rpossan/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1790.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:11:53 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 711ms (Views: 708.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:13:01 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 689ms (Views: 685.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:13:18 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 728ms (Views: 726.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:13:41 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 738ms (Views: 735.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:14:19 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 689ms (Views: 687.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:15:52 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (7.2ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 916ms (Views: 913.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:16:41 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (6.3ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 707ms (Views: 704.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:17:51 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 643ms (Views: 640.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:18:27 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 659ms (Views: 657.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:19:36 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 704ms (Views: 700.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:19:54 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 871ms (Views: 868.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:20:32 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 1018ms (Views: 1015.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:20:47 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 1087ms (Views: 1084.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:21:10 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 1163ms (Views: 1160.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:21:48 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 1055ms (Views: 1051.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:22:10 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 1600ms (Views: 1597.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:22:27 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 1157ms (Views: 1155.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:22:49 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 1047ms (Views: 1044.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:23:03 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 1271ms (Views: 1268.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:23:33 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 745ms (Views: 743.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:23:48 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 1271ms (Views: 1269.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:24:10 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 1092ms (Views: 1090.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:25:03 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 820ms (Views: 818.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:32:50 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (88.3ms)
+  Rendered layouts/_messages.html.erb (2.8ms)
+Completed 200 OK in 5046ms (Views: 4834.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search/q?utf8=%E2%9C%93&q=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DlPRAPEy44d4&commit=Preview" for 127.0.0.1 at 2016-10-19 19:33:13 +0000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"https://www.youtube.com/watch?v=lPRAPEy44d4", "commit"=>"Preview", "id"=>"q"}
+  Rendered visitors/index.html.erb within layouts/application (1325.2ms)
+Completed 500 Internal Server Error in 1469ms (ActiveRecord: 0.0ms)
+
+NoMethodError - undefined method `owner_name' for nil:NilClass:
+  yt (0.28.0) lib/yt/models/video.rb:617:in `block in reports_params'
+  yt (0.28.0) lib/yt/models/video.rb:616:in `reports_params'
+  yt (0.28.0) lib/yt/collections/reports.rb:174:in `reports_params'
+  yt (0.28.0) lib/yt/collections/reports.rb:168:in `block in list_params'
+  yt (0.28.0) lib/yt/collections/reports.rb:166:in `list_params'
+  yt (0.28.0) lib/yt/actions/list.rb:82:in `next_page'
+  yt (0.28.0) lib/yt/actions/list.rb:50:in `find_next'
+  yt (0.28.0) lib/yt/actions/list.rb:21:in `block in list'
+  yt (0.28.0) lib/yt/actions/list.rb:9:in `flat_map'
+  yt (0.28.0) lib/yt/collections/reports.rb:119:in `within'
+  yt (0.28.0) lib/yt/associations/has_reports.rb:295:in `block in define_range_metric_method'
+  yt (0.28.0) lib/yt/associations/has_reports.rb:275:in `block in define_metric_method'
+  app/views/visitors/index.html.erb:81:in `_app_views_visitors_index_html_erb__121313732131683788_42166500'
+  actionview (4.2.6) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.6) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.6) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.6) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+  actionview (4.2.6) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.6) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.6) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.6) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.6) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.6) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.6) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.6) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.6) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.6) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+  activesupport (4.2.6) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  app/controllers/search_controller.rb:7:in `index'
+  actionpack (4.2.6) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/9d8df5bb818a5d17/variables" for 127.0.0.1 at 2016-10-19 19:33:16 +0000
+
+
+Started GET "/search/q?utf8=%E2%9C%93&q=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DlPRAPEy44d4&commit=Preview" for 127.0.0.1 at 2016-10-19 19:34:09 +0000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"https://www.youtube.com/watch?v=lPRAPEy44d4", "commit"=>"Preview", "id"=>"q"}
+  Rendered visitors/index.html.erb within layouts/application (1887.3ms)
+Completed 500 Internal Server Error in 2004ms (ActiveRecord: 0.0ms)
+
+NoMethodError - undefined method `owner_name' for nil:NilClass:
+  yt (0.28.0) lib/yt/models/video.rb:617:in `block in reports_params'
+  yt (0.28.0) lib/yt/models/video.rb:616:in `reports_params'
+  yt (0.28.0) lib/yt/collections/reports.rb:174:in `reports_params'
+  yt (0.28.0) lib/yt/collections/reports.rb:168:in `block in list_params'
+  yt (0.28.0) lib/yt/collections/reports.rb:166:in `list_params'
+  yt (0.28.0) lib/yt/actions/list.rb:82:in `next_page'
+  yt (0.28.0) lib/yt/actions/list.rb:50:in `find_next'
+  yt (0.28.0) lib/yt/actions/list.rb:21:in `block in list'
+  yt (0.28.0) lib/yt/actions/list.rb:9:in `flat_map'
+  yt (0.28.0) lib/yt/collections/reports.rb:119:in `within'
+  yt (0.28.0) lib/yt/associations/has_reports.rb:295:in `block in define_range_metric_method'
+  yt (0.28.0) lib/yt/associations/has_reports.rb:275:in `block in define_metric_method'
+  app/views/visitors/index.html.erb:87:in `_app_views_visitors_index_html_erb__121313732131683788_36435500'
+  actionview (4.2.6) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.6) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.6) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.6) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+  actionview (4.2.6) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.6) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.6) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.6) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.6) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.6) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.6) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.6) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.6) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.6) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+  activesupport (4.2.6) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  app/controllers/search_controller.rb:7:in `index'
+  actionpack (4.2.6) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/7d17c4d36d9da062/variables" for 127.0.0.1 at 2016-10-19 19:34:12 +0000
+
+
+Started GET "/search/q?utf8=%E2%9C%93&q=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DlPRAPEy44d4&commit=Preview" for 127.0.0.1 at 2016-10-19 19:34:42 +0000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"https://www.youtube.com/watch?v=lPRAPEy44d4", "commit"=>"Preview", "id"=>"q"}
+  Rendered visitors/index.html.erb within layouts/application (1089.6ms)
+  Rendered layouts/_navigation_links.html.erb (2.0ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (2.2ms)
+  Rendered layouts/_navigation.html.erb (68.2ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 1876ms (Views: 1872.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search/q?utf8=%E2%9C%93&q=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DlPRAPEy44d4&commit=Preview" for 127.0.0.1 at 2016-10-19 19:35:59 +0000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"https://www.youtube.com/watch?v=lPRAPEy44d4", "commit"=>"Preview", "id"=>"q"}
+  Rendered visitors/index.html.erb within layouts/application (1104.3ms)
+  Rendered layouts/_navigation_links.html.erb (0.7ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (0.6ms)
+  Rendered layouts/_navigation.html.erb (77.0ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 2039ms (Views: 2036.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:36:14 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (43.6ms)
+Completed 500 Internal Server Error in 187ms (ActiveRecord: 0.0ms)
+
+NoMethodError - undefined method `id' for nil:NilClass:
+  app/views/visitors/index.html.erb:50:in `block in _app_views_visitors_index_html_erb__121313732131683788_70288348782440'
+  actionview (4.2.6) lib/action_view/helpers/capture_helper.rb:38:in `block in capture'
+  actionview (4.2.6) lib/action_view/helpers/capture_helper.rb:202:in `with_output_buffer'
+  actionview (4.2.6) lib/action_view/helpers/capture_helper.rb:38:in `capture'
+  actionview (4.2.6) lib/action_view/helpers/form_tag_helper.rb:70:in `form_tag'
+  app/views/visitors/index.html.erb:49:in `_app_views_visitors_index_html_erb__121313732131683788_70288348782440'
+  actionview (4.2.6) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.6) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.6) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.6) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+  actionview (4.2.6) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.6) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.6) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.6) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.6) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.6) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.6) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.6) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.6) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.6) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+  activesupport (4.2.6) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.6) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/33ca2e6f05253e86/variables" for 127.0.0.1 at 2016-10-19 19:36:16 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:36:35 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 658ms (Views: 656.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search/q?utf8=%E2%9C%93&q=https%3A%2F%2Fboingboing.net%2Ffeatures%2Fgetthumbs.html&commit=Preview" for 127.0.0.1 at 2016-10-19 19:36:46 +0000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"https://boingboing.net/features/getthumbs.html", "commit"=>"Preview", "id"=>"q"}
+  Rendered visitors/index.html.erb within layouts/application (1217.5ms)
+Completed 500 Internal Server Error in 1368ms (ActiveRecord: 0.0ms)
+
+Yt::Errors::RequestError - A request to YouTube API failed:
+To display more verbose errors, change the configuration of Yt with:
+
+Yt.configure do |config|
+  config.log_level = :debug
+end
+
+:
+  yt (0.28.0) lib/yt/request.rb:83:in `run'
+  yt (0.28.0) lib/yt/actions/list.rb:94:in `fetch_page'
+  yt (0.28.0) lib/yt/actions/list.rb:84:in `next_page'
+  yt (0.28.0) lib/yt/actions/list.rb:50:in `find_next'
+  yt (0.28.0) lib/yt/actions/list.rb:21:in `block in list'
+  yt (0.28.0) lib/yt/actions/list.rb:9:in `first'
+  yt (0.28.0) lib/yt/actions/list.rb:13:in `first!'
+  yt (0.28.0) lib/yt/associations/has_one.rb:18:in `block in has_one'
+  yt (0.28.0) lib/yt/associations/has_attribute.rb:47:in `block in define_memoized_method'
+  yt (0.28.0) lib/yt/collections/snippets.rb:22:in `block in list_params'
+  yt (0.28.0) lib/yt/collections/snippets.rb:20:in `list_params'
+  yt (0.28.0) lib/yt/actions/list.rb:82:in `next_page'
+  yt (0.28.0) lib/yt/actions/list.rb:50:in `find_next'
+  yt (0.28.0) lib/yt/actions/list.rb:21:in `block in list'
+  yt (0.28.0) lib/yt/actions/list.rb:9:in `first'
+  yt (0.28.0) lib/yt/actions/list.rb:13:in `first!'
+  yt (0.28.0) lib/yt/associations/has_one.rb:18:in `block in has_one'
+  yt (0.28.0) lib/yt/associations/has_attribute.rb:47:in `block in define_memoized_method'
+  yt (0.28.0) lib/yt/models/video.rb:26:in `thumbnail_url'
+  app/views/visitors/index.html.erb:63:in `_app_views_visitors_index_html_erb__121313732131683788_38114080'
+  actionview (4.2.6) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.6) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.6) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.6) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+  actionview (4.2.6) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.6) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.6) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.6) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.6) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.6) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.6) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.6) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.6) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.6) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+  activesupport (4.2.6) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  app/controllers/search_controller.rb:7:in `index'
+  actionpack (4.2.6) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/1617fd954e49bca4/variables" for 127.0.0.1 at 2016-10-19 19:36:47 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:37:02 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 855ms (Views: 853.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search/q?utf8=%E2%9C%93&q=https%3A%2F%2Fboingboing.net%2Ffeatures%2Fgetthumbs.html&commit=Preview" for 127.0.0.1 at 2016-10-19 19:37:09 +0000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"https://boingboing.net/features/getthumbs.html", "commit"=>"Preview", "id"=>"q"}
+  Rendered visitors/index.html.erb within layouts/application (1107.8ms)
+Completed 500 Internal Server Error in 1214ms (ActiveRecord: 0.0ms)
+
+Yt::Errors::RequestError - A request to YouTube API failed:
+To display more verbose errors, change the configuration of Yt with:
+
+Yt.configure do |config|
+  config.log_level = :debug
+end
+
+:
+  yt (0.28.0) lib/yt/request.rb:83:in `run'
+  yt (0.28.0) lib/yt/actions/list.rb:94:in `fetch_page'
+  yt (0.28.0) lib/yt/actions/list.rb:84:in `next_page'
+  yt (0.28.0) lib/yt/actions/list.rb:50:in `find_next'
+  yt (0.28.0) lib/yt/actions/list.rb:21:in `block in list'
+  yt (0.28.0) lib/yt/actions/list.rb:9:in `first'
+  yt (0.28.0) lib/yt/actions/list.rb:13:in `first!'
+  yt (0.28.0) lib/yt/associations/has_one.rb:18:in `block in has_one'
+  yt (0.28.0) lib/yt/associations/has_attribute.rb:47:in `block in define_memoized_method'
+  yt (0.28.0) lib/yt/collections/snippets.rb:22:in `block in list_params'
+  yt (0.28.0) lib/yt/collections/snippets.rb:20:in `list_params'
+  yt (0.28.0) lib/yt/actions/list.rb:82:in `next_page'
+  yt (0.28.0) lib/yt/actions/list.rb:50:in `find_next'
+  yt (0.28.0) lib/yt/actions/list.rb:21:in `block in list'
+  yt (0.28.0) lib/yt/actions/list.rb:9:in `first'
+  yt (0.28.0) lib/yt/actions/list.rb:13:in `first!'
+  yt (0.28.0) lib/yt/associations/has_one.rb:18:in `block in has_one'
+  yt (0.28.0) lib/yt/associations/has_attribute.rb:47:in `block in define_memoized_method'
+  yt (0.28.0) lib/yt/models/video.rb:26:in `thumbnail_url'
+  app/views/visitors/index.html.erb:63:in `_app_views_visitors_index_html_erb__121313732131683788_38114080'
+  actionview (4.2.6) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.6) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.6) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.6) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+  actionview (4.2.6) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.6) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.6) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.6) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.6) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.6) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.6) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.6) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.6) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.6) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+  activesupport (4.2.6) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  app/controllers/search_controller.rb:7:in `index'
+  actionpack (4.2.6) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/rpossan/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/4a1813481cb49455/variables" for 127.0.0.1 at 2016-10-19 19:37:10 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:37:44 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 663ms (Views: 661.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-19 19:37:59 +0000
+Processing by VisitorsController#index as HTML
+  Rendered visitors/index.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 854ms (Views: 851.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search/q?utf8=%E2%9C%93&q=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DHZczrmyof6g&commit=Preview" for 127.0.0.1 at 2016-10-19 19:38:31 +0000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"https://www.youtube.com/watch?v=HZczrmyof6g", "commit"=>"Preview", "id"=>"q"}
+  Rendered visitors/index.html.erb within layouts/application (1072.8ms)
+  Rendered layouts/_navigation_links.html.erb (0.6ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (0.8ms)
+  Rendered layouts/_navigation.html.erb (65.6ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 1809ms (Views: 1806.0ms | ActiveRecord: 0.0ms)
