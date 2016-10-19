@@ -37,10 +37,10 @@ group :development, :test do
   gem 'pry-rescue'
   gem 'rspec-rails'
   gem 'rubocop'
-  gem 'sqlite3'
+  #gem 'sqlite3'
 end
 group :production do
-  gem 'sqlite3'
+  #gem 'sqlite3'
   gem 'rails_12factor'
 end
 group :test do
