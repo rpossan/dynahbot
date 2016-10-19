@@ -29,6 +29,7 @@ group :development do
   gem 'rb-fsevent', :require=>false
   gem 'rb-inotify', :require=>false
   gem 'spring-commands-rspec'
+  gem 'sqlite3'
 end
 group :development, :test do
   gem 'factory_girl_rails'
@@ -41,6 +42,7 @@ group :development, :test do
 end
 group :production do
   #gem 'sqlite3'
+  gem 'pg'
   gem 'rails_12factor'
 end
 group :test do

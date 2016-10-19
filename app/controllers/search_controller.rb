@@ -1,7 +1,8 @@
 class SearchController < ApplicationController
 	
 	def index
-		byebug
+		q = params[:q]
+		
   		redirect_to root_path
 	end
 	
